@@ -20,13 +20,13 @@
 	<classpathentry kind="lib" path="lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="lib/com.springsource.org.aopalliance-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/com.springsource.net.sf.cglib-2.2.0.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/at.ac.tuwien.big.smartmatcher.ui.gmf"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.emf.transaction_1.3.0.v200902010221.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="var" path="JDK_HOME/lib/tools.jar"/>
 	<classpathentry kind="var" path="JRE_LIB"/>
+	<classpathentry kind="lib" path="lib/eclipse/org.eclipse.emf.common_2.7.0.v20110912-0920.jar"/>
+	<classpathentry kind="lib" path="lib/eclipse/org.eclipse.emf.ecore_2.7.0.v20110912-0920.jar"/>
+	<classpathentry kind="lib" path="lib/eclipse/org.eclipse.emf.ecore.xmi_2.7.0.v20110520-1406.jar"/>
+	<classpathentry kind="lib" path="lib/eclipse/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

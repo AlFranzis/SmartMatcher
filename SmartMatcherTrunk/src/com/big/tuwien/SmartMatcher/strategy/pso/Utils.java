@@ -54,47 +54,47 @@ public class Utils {
 	}
 	
 	
-	public static PSOR2R unwrap(Bubble<C2C> c2c1, Bubble<C2C> c2c2, Bubble<R2R> r2r) {
+	public static PSOR2R unwrapR2R(Bubble<C2C> c2c1, Bubble<C2C> c2c2, Bubble<R2R> r2r) {
 		Element lhs = ((HomogenicConfiguration<R2R>)r2r.getConfiguration()).getLHSFocusElement();
 		Element rhs = ((HomogenicConfiguration<R2R>)r2r.getConfiguration()).getRHSFocusElement();
-		PSOR2R unwrapped = new PSOR2R(c(unwrap(c2c1),unwrap(c2c2)), lhs, rhs);
+		PSOR2R unwrapped = new PSOR2R(c(unwrapC2C(c2c1),unwrapC2C(c2c2)), lhs, rhs);
 		return unwrapped;
 	}
 	
 	
-	public static PSOR2R unwrap(Bubble<R2R> r2r) {
+	public static PSOR2R unwrapR2R(Bubble<R2R> r2r) {
 		R2RBubble _a2a = (R2RBubble) r2r;
 		R2RConfiguration a2aConfig = (R2RConfiguration) _a2a.getConfiguration();
 		Element lhs = a2aConfig.getLHSFocusElement();
 		Element rhs = a2aConfig.getRHSFocusElement();
 		C2CBubble contextC2C1 = _a2a.getContext1();
 		C2CBubble contextC2C2 = _a2a.getContext2();
-		PSOR2R unwrapped = new PSOR2R(c(unwrap(contextC2C1), unwrap(contextC2C2)), lhs, rhs);
+		PSOR2R unwrapped = new PSOR2R(c(unwrapC2C(contextC2C1), unwrapC2C(contextC2C2)), lhs, rhs);
 		return unwrapped;
 	}
 	
 	
-	public static PSOA2A unwrap(Bubble<C2C> c2c, Bubble<A2A> a2a) {
+	public static PSOA2A unwrapA2A(Bubble<C2C> c2c, Bubble<A2A> a2a) {
 		Element lhs = ((HomogenicConfiguration<A2A>)a2a.getConfiguration()).getLHSFocusElement();
 		Element rhs = ((HomogenicConfiguration<A2A>)a2a.getConfiguration()).getRHSFocusElement();
-		PSOA2A unwrapped = new PSOA2A(c(unwrap(c2c)), lhs, rhs);
+		PSOA2A unwrapped = new PSOA2A(c(unwrapC2C(c2c)), lhs, rhs);
 		return unwrapped;
 	}
 	
 	
-	public static PSOA2A unwrap(Bubble<A2A> a2a) {
+	public static PSOA2A unwrapA2A(Bubble<A2A> a2a) {
 		A2ABubble _a2a = (A2ABubble) a2a;
 		A2AConfiguration a2aConfig = (A2AConfiguration) _a2a.getConfiguration();
 		Element lhs = a2aConfig.getLHSFocusElement();
 		Element rhs = a2aConfig.getRHSFocusElement();
 		C2CBubble contextC2C = _a2a.getContext();
-		PSOA2A unwrapped = new PSOA2A(c(unwrap(contextC2C)), lhs, rhs);
+		PSOA2A unwrapped = new PSOA2A(c(unwrapC2C(contextC2C)), lhs, rhs);
 		return unwrapped;
 	}
 	
 	
 	//TODO unwrap children ?
-	public static PSOC2C unwrap(Bubble<C2C> c2c) {	
+	public static PSOC2C unwrapC2C(Bubble<C2C> c2c) {	
 		Element lhs = ((HomogenicConfiguration<C2C>)c2c.getConfiguration()).getLHSFocusElement();
 		Element rhs = ((HomogenicConfiguration<C2C>)c2c.getConfiguration()).getRHSFocusElement();
 		PSOC2C unwrapped = new PSOC2C(null, lhs, rhs);
@@ -102,10 +102,10 @@ public class Utils {
 	}
 	
 	
-	public static List<PSOR2R> unwrap(Bubble<C2C> c2c1, Bubble<C2C> c2c2, List<Bubble<R2R>> r2rs) {
+	public static List<PSOR2R> unwrapR2Rs(Bubble<C2C> c2c1, Bubble<C2C> c2c2, List<Bubble<R2R>> r2rs) {
 		List<PSOR2R> unwrapped = new Vector<PSOR2R>();
 		for(Bubble<R2R> r2r : r2rs)
-			unwrapped.add(unwrap(c2c1, c2c2, r2r));
+			unwrapped.add(unwrapR2R(c2c1, c2c2, r2r));
 		
 		return unwrapped;
 	}
@@ -114,16 +114,16 @@ public class Utils {
 	public static List<PSOR2R> unwrapR2Rs(List<Bubble<R2R>> r2rs) {
 		List<PSOR2R> unwrapped = new Vector<PSOR2R>();
 		for(Bubble<R2R> r2r : r2rs)
-			unwrapped.add(unwrap(r2r));
+			unwrapped.add(unwrapR2R(r2r));
 		
 		return unwrapped;
 	}
 	
 	
-	public static List<PSOA2A> unwrap(Bubble<C2C> c2c, List<Bubble<A2A>> a2as) {
+	public static List<PSOA2A> unwrapA2As(Bubble<C2C> c2c, List<Bubble<A2A>> a2as) {
 		List<PSOA2A> unwrapped = new Vector<PSOA2A>();
 		for(Bubble<A2A> a2a : a2as)
-			unwrapped.add(unwrap(c2c, a2a));
+			unwrapped.add(unwrapA2A(c2c, a2a));
 		
 		return unwrapped;
 	}
@@ -132,7 +132,7 @@ public class Utils {
 	public static List<PSOA2A> unwrapA2As(List<Bubble<A2A>> a2as) {
 		List<PSOA2A> unwrapped = new Vector<PSOA2A>();
 		for(Bubble<A2A> a2a : a2as)
-			unwrapped.add(unwrap(a2a));
+			unwrapped.add(unwrapA2A(a2a));
 		
 		return unwrapped;
 	}

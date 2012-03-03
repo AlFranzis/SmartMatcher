@@ -36,7 +36,7 @@ public class PSOC2C extends AbstractCorrespondence {
 	}
 	
 	
-	public <C extends Context> Multimap<C,Correspondence> descendents(Class<C> contextType) {
+	public <C extends Context> Multimap<C,Correspondence> descendents2(Class<C> contextType) {
 		Set<Correspondence> dcs = descendents();
 		Multimap<C,Correspondence> contextMap = new HashMultimap<C,Correspondence>();
 		for(Correspondence dc : dcs) {

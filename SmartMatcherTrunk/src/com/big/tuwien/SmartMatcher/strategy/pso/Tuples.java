@@ -272,8 +272,8 @@ public class Tuples {
    *
    * @throws  NullPointerException  Thrown if t2s is null
    */
-  public static <E0, E1> T2<List<E0>, List<E1>> unzip( final T2<E0, E1>... t2s )
-      throws NullPointerException { return unzip( asList( t2s ) ); }
+  public static <E0, E1> T2<List<E0>, List<E1>> unzipT2( final T2<E0, E1>... t2s )
+      throws NullPointerException { return unzipT2( asList( t2s ) ); }
 
   /**
    * Unzip T2s into two Lists.
@@ -287,9 +287,9 @@ public class Tuples {
    *
    * @throws  NullPointerException  Thrown if t2s is null
    */
-  public static <E0, E1> T2<List<E0>, List<E1>> unzip(
+  public static <E0, E1> T2<List<E0>, List<E1>> unzipT2(
                                                       final Iterable<T2<E0, E1>> t2s )
-      throws NullPointerException { return unzip( t2s.iterator() ); }
+      throws NullPointerException { return unzipT2( t2s.iterator() ); }
 
   /**
    * Unzip T2s into two Lists.
@@ -303,7 +303,7 @@ public class Tuples {
    *
    * @throws  NullPointerException  Thrown if t2s is null
    */
-  public static <E0, E1> T2<List<E0>, List<E1>> unzip(
+  public static <E0, E1> T2<List<E0>, List<E1>> unzipT2(
                                                       final Iterator<T2<E0, E1>> t2s )
       throws NullPointerException {
     final List<E0> l0 = new ArrayList<E0>();
@@ -331,7 +331,7 @@ public class Tuples {
    */
   public static <E0, E1, E2> T3<List<E0>, List<E1>, List<E2>> unzip(
                                                                     final T3<E0, E1, E2>... t3s )
-      throws NullPointerException { return unzip( asList( t3s ) ); }
+      throws NullPointerException { return unzipT3( asList( t3s ) ); }
 
   /**
    * Unzip T3s into three Lists.
@@ -346,11 +346,11 @@ public class Tuples {
    *
    * @throws  NullPointerException  Thrown if t3s is null
    */
-  public static <E0, E1, E2> T3<List<E0>, List<E1>, List<E2>> unzip(
+  public static <E0, E1, E2> T3<List<E0>, List<E1>, List<E2>> unzipT3(
                                                                     final Iterable<T3<E0,
                                                                                       E1,
                                                                                       E2>> t3s )
-      throws NullPointerException { return unzip( t3s.iterator() ); }
+      throws NullPointerException { return unzipT3( t3s.iterator() ); }
 
   /**
    * Unzip T3s into three Lists.
@@ -365,7 +365,7 @@ public class Tuples {
    *
    * @throws  NullPointerException  Thrown if t3s is null
    */
-  public static <E0, E1, E2> T3<List<E0>, List<E1>, List<E2>> unzip(
+  public static <E0, E1, E2> T3<List<E0>, List<E1>, List<E2>> unzipT3(
                                                                     final Iterator<T3<E0,
                                                                                       E1,
                                                                                       E2>> t3s )
@@ -397,8 +397,8 @@ public class Tuples {
    * @throws  NullPointerException  Thrown if t4s is null
    */
   public static <E0, E1, E2, E3> T4<List<E0>, List<E1>, List<E2>, List<E3>>
-  unzip( final T4<E0, E1, E2, E3>... t4s ) throws NullPointerException {
-    return unzip( asList( t4s ) );
+  unzipT4( final T4<E0, E1, E2, E3>... t4s ) throws NullPointerException {
+    return unzipT4( asList( t4s ) );
   }
 
   /**
@@ -416,8 +416,8 @@ public class Tuples {
    * @throws  NullPointerException  Thrown if t4s is null
    */
   public static <E0, E1, E2, E3> T4<List<E0>, List<E1>, List<E2>, List<E3>>
-  unzip( final Iterable<T4<E0, E1, E2, E3>> iT ) throws NullPointerException {
-    return unzip( iT.iterator() );
+  unzipT4( final Iterable<T4<E0, E1, E2, E3>> iT ) throws NullPointerException {
+    return unzipT4( iT.iterator() );
   }
 
   /**
@@ -435,7 +435,7 @@ public class Tuples {
    * @throws  NullPointerException  Thrown if t4s is null
    */
   public static <E0, E1, E2, E3> T4<List<E0>, List<E1>, List<E2>, List<E3>>
-  unzip( final Iterator<T4<E0, E1, E2, E3>> iT ) throws NullPointerException {
+  unzipT4( final Iterator<T4<E0, E1, E2, E3>> iT ) throws NullPointerException {
     final List<E0> l0 = new ArrayList<E0>();
     final List<E1> l1 = new ArrayList<E1>();
     final List<E2> l2 = new ArrayList<E2>();
