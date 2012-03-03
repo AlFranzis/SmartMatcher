@@ -1,0 +1,132 @@
+openContainer TPropose.dbxml
+
+
+query '
+collection("TPropose.dbxml")/fragment
+'
+print
+
+
+query '
+declare namespace sm = "http://www.big.tuwien.ac.at/sm";
+
+(: class comparison function :)
+declare function sm:classes-equal( $class1 as element(), $class2 as element() )  as xs:boolean {
+  data($class1/name) = data($class2/name)
+};  
+
+(: attribute comparison function :)
+declare function sm:atts-equal( $att1 as element(), $att2 as element() )  as xs:boolean {
+  data($att1/name) = data($att2/name)
+}; 
+
+(: set metamodel :)
+let $mm :=  collection("TPropose.dbxml")/metamodel[1]
+for $frag in collection("TPropose.dbxml")/fragment[not(exists(@parent))]
+for $fclass in $frag/class
+for $mclass in $mm/class
+where sm:classes-equal($fclass, $mclass)
+
+return $frag
+'
+print
+
+
+
+
+echo *******************************
+
+query '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+
+(: all children fragments :)
+let $parentId := string(2)
+let $delim := " "
+for $frag in collection("TPropose.dbxml")/fragment
+let $parentIds := tokenize($frag/@parent, $delim)
+where functx:is-value-in-sequence($parentId, $parentIds)
+return $frag
+
+'
+print
+
+
+query '
+collection("TPropose.dbxml")/*
+'
+print
+
+query '
+count(collection("TPropose.dbxml")/fragment-mapping)
+'
+print
+
+query '
+count(collection("TPropose.dbxml")/fragment)
+'
+print
+
+
+query '
+collection("TPropose.dbxml")/fragment[@root="true"]
+'
+print
+
+query '
+collection("TPropose.dbxml")/fragment[@id="F_2"]
+'
+print
+
+
+query '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+let $fragId := "F_2"
+let $fmIds := data(collection("TPropose.dbxml")/fragment[@id=$fragId]/mappings)
+for $fm in collection("TPropose.dbxml")/fragment-mapping
+let $fmId := $fm/@id
+where functx:is-value-in-sequence($fmId, $fmIds)
+return $fm
+'
+print
+
+
+query '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+ declare function functx:have-common-value
+ 	( $seq1 as xs:anyAtomicType*,
+ 	$seq2 as xs:anyAtomicType* ) as xs:boolean {
+ 	some $v in $seq1
+ 	satisfies(functx:is-value-in-sequence($v, $seq2))	
+ };
+ 
+let $fragId := "F_2"
+let $fmIds1 := data(collection("TPropose.dbxml")/fragment[@id=$fragId]/mappings)
+for $f in collection("TPropose.dbxml")/fragment
+let $fmIds2 := data($f/mappings)
+where $f/@id != $fragId and functx:have-common-value($fmIds1, $fmIds2)
+return $f
+'
+print
+
+
+
+
+

@@ -1,0 +1,1079 @@
+
+dbxml> 24 objects returned for eager expression '
+collection("TPropose.dbxml")/fragment
+'
+
+<fragment id="F_1" root="true">
+    <class id="C1">
+        <name>C2</name>
+    </class>
+    <mappings>FM_1</mappings>
+</fragment>
+<fragment id="F_5" root="false" parent="F_3 F_4">
+    <class id="C9">
+        <name>C1</name>
+    </class>
+    <class id="C8">
+        <name>C2</name>
+        <attribute id="A15">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_2</mappings>
+</fragment>
+<fragment id="F_12" root="false" parent="F_8 F_11 F_10">
+    <class id="C14">
+        <name>C2</name>
+        <attribute id="A17">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <class id="C15">
+        <name>C1</name>
+        <attribute id="A18">
+            <name>a1</name>
+        </attribute>
+        <reference id="R7" target="C14">
+            <name>r1</name>
+        </reference>
+    </class>
+    <mappings>FM_6</mappings>
+</fragment>
+<fragment id="F_8" root="false" parent="F_7 F_5">
+    <class id="C17">
+        <name>C2</name>
+        <attribute id="A20">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <class id="C16">
+        <name>C1</name>
+        <attribute id="A19">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_7</mappings>
+</fragment>
+<fragment id="F_6" root="false" parent="F_2">
+    <class id="C20">
+        <name>C1</name>
+        <attribute id="A22">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_9</mappings>
+</fragment>
+<fragment id="F_3" root="false" parent="F_1 F_2">
+    <class id="C11">
+        <name>C1</name>
+    </class>
+    <class id="C10">
+        <name>C2</name>
+    </class>
+    <mappings>FM_3</mappings>
+</fragment>
+<fragment id="F_4" root="false" parent="F_1">
+    <class id="C13">
+        <name>C2</name>
+        <attribute id="A16">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_5</mappings>
+</fragment>
+<fragment id="F_2" root="true">
+    <class id="C12">
+        <name>C1</name>
+    </class>
+    <mappings>FM_4</mappings>
+</fragment>
+<fragment id="F_9" root="false" parent="F_3">
+    <class id="C24">
+        <name>C2</name>
+    </class>
+    <class id="C23">
+        <name>C1</name>
+        <reference id="R9" target="C24">
+            <name>r1</name>
+        </reference>
+    </class>
+    <mappings>FM_11</mappings>
+</fragment>
+<fragment id="F_7" root="false" parent="F_3 F_6">
+    <class id="C18">
+        <name>C2</name>
+    </class>
+    <class id="C19">
+        <name>C1</name>
+        <attribute id="A21">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_8</mappings>
+</fragment>
+<fragment id="F_10" root="false" parent="F_7 F_9">
+    <class id="C21">
+        <name>C1</name>
+        <attribute id="A23">
+            <name>a1</name>
+        </attribute>
+        <reference id="R8" target="C22">
+            <name>r1</name>
+        </reference>
+    </class>
+    <class id="C22">
+        <name>C2</name>
+    </class>
+    <mappings>FM_10</mappings>
+</fragment>
+<fragment id="F_11" root="false" parent="F_9 F_5">
+    <class id="C25">
+        <name>C1</name>
+        <reference id="R10" target="C26">
+            <name>r1</name>
+        </reference>
+    </class>
+    <class id="C26">
+        <name>C2</name>
+        <attribute id="A24">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_12</mappings>
+</fragment>
+<fragment id="F_17" root="false" parent="F_15 F_16">
+    <class id="C28">
+        <name>C1*</name>
+    </class>
+    <class id="C27">
+        <name>C2*</name>
+        <attribute id="A25">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_13</mappings>
+</fragment>
+<fragment id="F_18" root="false" parent="F_15">
+    <class id="C35">
+        <name>C2*</name>
+    </class>
+    <class id="C34">
+        <name>C1*</name>
+        <reference id="R11" target="C35">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_18</mappings>
+</fragment>
+<fragment id="F_19" root="false" parent="F_17 F_18">
+    <class id="C36">
+        <name>C2*</name>
+        <attribute id="A27">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <class id="C37">
+        <name>C1*</name>
+        <reference id="R12" target="C36">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_19</mappings>
+</fragment>
+<fragment id="F_15" root="false" parent="F_14 F_13">
+    <class id="C29">
+        <name>C1*</name>
+    </class>
+    <class id="C30">
+        <name>C2*</name>
+    </class>
+    <mappings>FM_14</mappings>
+</fragment>
+<fragment id="F_13" root="true">
+    <class id="C31">
+        <name>C2*</name>
+    </class>
+    <mappings>FM_15</mappings>
+</fragment>
+<fragment id="F_14" root="true">
+    <class id="C32">
+        <name>C1*</name>
+    </class>
+    <mappings>FM_16</mappings>
+</fragment>
+<fragment id="F_22" root="false" parent="F_21 F_17">
+    <class id="C39">
+        <name>C1*</name>
+        <attribute id="A29">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <class id="C38">
+        <name>C2*</name>
+        <attribute id="A28">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_20</mappings>
+</fragment>
+<fragment id="F_20" root="false" parent="F_14">
+    <class id="C42">
+        <name>C1*</name>
+        <attribute id="A31">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <mappings>FM_22</mappings>
+</fragment>
+<fragment id="F_16" root="false" parent="F_13">
+    <class id="C33">
+        <name>C2*</name>
+        <attribute id="A26">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_17</mappings>
+</fragment>
+<fragment id="F_24" root="false" parent="F_23 F_22 F_19">
+    <class id="C44">
+        <name>C2*</name>
+        <attribute id="A33">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <class id="C43">
+        <name>C1*</name>
+        <attribute id="A32">
+            <name>a1*</name>
+        </attribute>
+        <reference id="R13" target="C44">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_23</mappings>
+</fragment>
+<fragment id="F_23" root="false" parent="F_21 F_18">
+    <class id="C46">
+        <name>C2*</name>
+    </class>
+    <class id="C45">
+        <name>C1*</name>
+        <attribute id="A34">
+            <name>a1*</name>
+        </attribute>
+        <reference id="R14" target="C46">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_24</mappings>
+</fragment>
+<fragment id="F_21" root="false" parent="F_15 F_20">
+    <class id="C41">
+        <name>C2*</name>
+    </class>
+    <class id="C40">
+        <name>C1*</name>
+        <attribute id="A30">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <mappings>FM_21</mappings>
+</fragment>
+2 objects returned for eager expression '
+declare namespace sm = "http://www.big.tuwien.ac.at/sm";
+
+(: class comparison function :)
+declare function sm:classes-equal( $class1 as element(), $class2 as element() )  as xs:boolean {
+  data($class1/name) = data($class2/name)
+};  
+
+(: attribute comparison function :)
+declare function sm:atts-equal( $att1 as element(), $att2 as element() )  as xs:boolean {
+  data($att1/name) = data($att2/name)
+}; 
+
+(: set metamodel :)
+let $mm :=  collection("TPropose.dbxml")/metamodel[1]
+for $frag in collection("TPropose.dbxml")/fragment[not(exists(@parent))]
+for $fclass in $frag/class
+for $mclass in $mm/class
+where sm:classes-equal($fclass, $mclass)
+
+return $frag
+'
+
+<fragment id="F_1" root="true">
+    <class id="C1">
+        <name>C2</name>
+    </class>
+    <mappings>FM_1</mappings>
+</fragment>
+<fragment id="F_2" root="true">
+    <class id="C12">
+        <name>C1</name>
+    </class>
+    <mappings>FM_4</mappings>
+</fragment>
+*******************************
+0 objects returned for eager expression '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+
+(: all children fragments :)
+let $parentId := string(2)
+let $delim := " "
+for $frag in collection("TPropose.dbxml")/fragment
+let $parentIds := tokenize($frag/@parent, $delim)
+where functx:is-value-in-sequence($parentId, $parentIds)
+return $frag
+
+'
+
+37 objects returned for eager expression '
+collection("TPropose.dbxml")/*
+'
+
+<fragment id="F_1" root="true">
+    <class id="C1">
+        <name>C2</name>
+    </class>
+    <mappings>FM_1</mappings>
+</fragment>
+<fragment id="F_5" root="false" parent="F_3 F_4">
+    <class id="C9">
+        <name>C1</name>
+    </class>
+    <class id="C8">
+        <name>C2</name>
+        <attribute id="A15">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_2</mappings>
+</fragment>
+<fragment id="F_12" root="false" parent="F_8 F_11 F_10">
+    <class id="C14">
+        <name>C2</name>
+        <attribute id="A17">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <class id="C15">
+        <name>C1</name>
+        <attribute id="A18">
+            <name>a1</name>
+        </attribute>
+        <reference id="R7" target="C14">
+            <name>r1</name>
+        </reference>
+    </class>
+    <mappings>FM_6</mappings>
+</fragment>
+<fragment id="F_8" root="false" parent="F_7 F_5">
+    <class id="C17">
+        <name>C2</name>
+        <attribute id="A20">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <class id="C16">
+        <name>C1</name>
+        <attribute id="A19">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_7</mappings>
+</fragment>
+<fragment id="F_6" root="false" parent="F_2">
+    <class id="C20">
+        <name>C1</name>
+        <attribute id="A22">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_9</mappings>
+</fragment>
+<fragment id="F_3" root="false" parent="F_1 F_2">
+    <class id="C11">
+        <name>C1</name>
+    </class>
+    <class id="C10">
+        <name>C2</name>
+    </class>
+    <mappings>FM_3</mappings>
+</fragment>
+<fragment id="F_4" root="false" parent="F_1">
+    <class id="C13">
+        <name>C2</name>
+        <attribute id="A16">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_5</mappings>
+</fragment>
+<fragment id="F_2" root="true">
+    <class id="C12">
+        <name>C1</name>
+    </class>
+    <mappings>FM_4</mappings>
+</fragment>
+<fragment id="F_9" root="false" parent="F_3">
+    <class id="C24">
+        <name>C2</name>
+    </class>
+    <class id="C23">
+        <name>C1</name>
+        <reference id="R9" target="C24">
+            <name>r1</name>
+        </reference>
+    </class>
+    <mappings>FM_11</mappings>
+</fragment>
+<fragment id="F_7" root="false" parent="F_3 F_6">
+    <class id="C18">
+        <name>C2</name>
+    </class>
+    <class id="C19">
+        <name>C1</name>
+        <attribute id="A21">
+            <name>a1</name>
+        </attribute>
+    </class>
+    <mappings>FM_8</mappings>
+</fragment>
+<fragment id="F_10" root="false" parent="F_7 F_9">
+    <class id="C21">
+        <name>C1</name>
+        <attribute id="A23">
+            <name>a1</name>
+        </attribute>
+        <reference id="R8" target="C22">
+            <name>r1</name>
+        </reference>
+    </class>
+    <class id="C22">
+        <name>C2</name>
+    </class>
+    <mappings>FM_10</mappings>
+</fragment>
+<fragment id="F_11" root="false" parent="F_9 F_5">
+    <class id="C25">
+        <name>C1</name>
+        <reference id="R10" target="C26">
+            <name>r1</name>
+        </reference>
+    </class>
+    <class id="C26">
+        <name>C2</name>
+        <attribute id="A24">
+            <name>a3</name>
+        </attribute>
+    </class>
+    <mappings>FM_12</mappings>
+</fragment>
+<fragment id="F_17" root="false" parent="F_15 F_16">
+    <class id="C28">
+        <name>C1*</name>
+    </class>
+    <class id="C27">
+        <name>C2*</name>
+        <attribute id="A25">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_13</mappings>
+</fragment>
+<fragment id="F_18" root="false" parent="F_15">
+    <class id="C35">
+        <name>C2*</name>
+    </class>
+    <class id="C34">
+        <name>C1*</name>
+        <reference id="R11" target="C35">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_18</mappings>
+</fragment>
+<fragment id="F_19" root="false" parent="F_17 F_18">
+    <class id="C36">
+        <name>C2*</name>
+        <attribute id="A27">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <class id="C37">
+        <name>C1*</name>
+        <reference id="R12" target="C36">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_19</mappings>
+</fragment>
+<fragment id="F_15" root="false" parent="F_14 F_13">
+    <class id="C29">
+        <name>C1*</name>
+    </class>
+    <class id="C30">
+        <name>C2*</name>
+    </class>
+    <mappings>FM_14</mappings>
+</fragment>
+<fragment id="F_13" root="true">
+    <class id="C31">
+        <name>C2*</name>
+    </class>
+    <mappings>FM_15</mappings>
+</fragment>
+<fragment id="F_14" root="true">
+    <class id="C32">
+        <name>C1*</name>
+    </class>
+    <mappings>FM_16</mappings>
+</fragment>
+<fragment id="F_22" root="false" parent="F_21 F_17">
+    <class id="C39">
+        <name>C1*</name>
+        <attribute id="A29">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <class id="C38">
+        <name>C2*</name>
+        <attribute id="A28">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_20</mappings>
+</fragment>
+<fragment id="F_20" root="false" parent="F_14">
+    <class id="C42">
+        <name>C1*</name>
+        <attribute id="A31">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <mappings>FM_22</mappings>
+</fragment>
+<fragment id="F_16" root="false" parent="F_13">
+    <class id="C33">
+        <name>C2*</name>
+        <attribute id="A26">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <mappings>FM_17</mappings>
+</fragment>
+<fragment id="F_24" root="false" parent="F_23 F_22 F_19">
+    <class id="C44">
+        <name>C2*</name>
+        <attribute id="A33">
+            <name>a3*</name>
+        </attribute>
+    </class>
+    <class id="C43">
+        <name>C1*</name>
+        <attribute id="A32">
+            <name>a1*</name>
+        </attribute>
+        <reference id="R13" target="C44">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_23</mappings>
+</fragment>
+<fragment id="F_23" root="false" parent="F_21 F_18">
+    <class id="C46">
+        <name>C2*</name>
+    </class>
+    <class id="C45">
+        <name>C1*</name>
+        <attribute id="A34">
+            <name>a1*</name>
+        </attribute>
+        <reference id="R14" target="C46">
+            <name>r1*</name>
+        </reference>
+    </class>
+    <mappings>FM_24</mappings>
+</fragment>
+<fragment id="F_21" root="false" parent="F_15 F_20">
+    <class id="C41">
+        <name>C2*</name>
+    </class>
+    <class id="C40">
+        <name>C1*</name>
+        <attribute id="A30">
+            <name>a1*</name>
+        </attribute>
+    </class>
+    <mappings>FM_21</mappings>
+</fragment>
+<fragment-mapping id="FM_1">
+    <operator id="OP_C2C_1" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_2">
+    <operator id="OP_C2C_4" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_2" name="C2C" sim="-1.0">
+        <children>OP_A2A_3</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_3" name="A2A" sim="-1.0" parents="OP_C2C_2">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A8</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_6">
+    <operator id="OP_C2C_10" name="C2C" sim="-1.0">
+        <children>OP_R2R_11</children>
+        <children>OP_A2A_12</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_R2R_11" name="R2R" sim="-1.0" parents="OP_C2C_10 OP_C2C_13">
+        <lhs-role name="lhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R4</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_12" name="A2A" sim="-1.0" parents="OP_C2C_10">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A10</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_14" name="A2A" sim="-1.0" parents="OP_C2C_13">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A8</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_13" name="C2C" sim="-1.0">
+        <children>OP_R2R_11</children>
+        <children>OP_A2A_14</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_7">
+    <operator id="OP_C2C_17" name="C2C" sim="-1.0">
+        <children>OP_A2A_18</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_15" name="C2C" sim="-1.0">
+        <children>OP_A2A_16</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_18" name="A2A" sim="-1.0" parents="OP_C2C_17">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A8</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_16" name="A2A" sim="-1.0" parents="OP_C2C_15">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A10</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_9">
+    <operator id="OP_A2A_23" name="A2A" sim="-1.0" parents="OP_C2C_22">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A10</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_22" name="C2C" sim="-1.0">
+        <children>OP_A2A_23</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_3">
+    <operator id="OP_C2C_5" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_6" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_5">
+    <operator id="OP_C2C_8" name="C2C" sim="-1.0">
+        <children>OP_A2A_9</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_9" name="A2A" sim="-1.0" parents="OP_C2C_8">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A8</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_4">
+    <operator id="OP_C2C_7" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_11">
+    <operator id="OP_C2C_28" name="C2C" sim="-1.0">
+        <children>OP_R2R_29</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_R2R_29" name="R2R" sim="-1.0" parents="OP_C2C_28 OP_C2C_30">
+        <lhs-role name="lhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R4</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_30" name="C2C" sim="-1.0">
+        <children>OP_R2R_29</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_8">
+    <operator id="OP_C2C_19" name="C2C" sim="-1.0">
+        <children>OP_A2A_20</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_20" name="A2A" sim="-1.0" parents="OP_C2C_19">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A10</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_21" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_10">
+    <operator id="OP_C2C_27" name="C2C" sim="-1.0">
+        <children>OP_R2R_25</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_24" name="C2C" sim="-1.0">
+        <children>OP_R2R_25</children>
+        <children>OP_A2A_26</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_R2R_25" name="R2R" sim="-1.0" parents="OP_C2C_24 OP_C2C_27">
+        <lhs-role name="lhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R4</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_26" name="A2A" sim="-1.0" parents="OP_C2C_24">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A10</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<fragment-mapping id="FM_12">
+    <operator id="OP_R2R_32" name="R2R" sim="-1.0" parents="OP_C2C_31 OP_C2C_33">
+        <lhs-role name="lhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusReference">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="reference">R4</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_33" name="C2C" sim="-1.0">
+        <children>OP_R2R_32</children>
+        <children>OP_A2A_34</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C2</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C5</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_A2A_34" name="A2A" sim="-1.0" parents="OP_C2C_33">
+        <lhs-role name="lhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A1</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusAttribute">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="attribute">A8</element>
+        </rhs-role>
+    </operator>
+    <operator id="OP_C2C_31" name="C2C" sim="-1.0">
+        <children>OP_R2R_32</children>
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+<metamodel>
+    <class id="C47">
+        <name>C1</name>
+        <attribute id="A36">
+            <name>a2</name>
+        </attribute>
+        <attribute id="A35">
+            <name>a1</name>
+        </attribute>
+        <reference id="R17" target="C48">
+            <name>r1</name>
+        </reference>
+    </class>
+    <class id="C49">
+        <name>C3</name>
+        <attribute id="A39">
+            <name>a5</name>
+        </attribute>
+        <attribute id="A41">
+            <name>a7</name>
+        </attribute>
+        <attribute id="A40">
+            <name>a6</name>
+        </attribute>
+    </class>
+    <class id="C48">
+        <name>C2</name>
+        <attribute id="A38">
+            <name>a4</name>
+        </attribute>
+        <attribute id="A37">
+            <name>a3</name>
+        </attribute>
+        <reference id="R16" target="C49">
+            <name>r3</name>
+        </reference>
+        <reference id="R15" target="C47">
+            <name>r2</name>
+        </reference>
+    </class>
+    <class id="C51">
+        <name>C5</name>
+        <attribute id="A44">
+            <name>a10</name>
+        </attribute>
+        <attribute id="A43">
+            <name>a9</name>
+        </attribute>
+    </class>
+    <class id="C50">
+        <name>C4</name>
+        <attribute id="A42">
+            <name>a8</name>
+        </attribute>
+    </class>
+</metamodel>
+1 objects returned for eager expression '
+count(collection("TPropose.dbxml")/fragment-mapping)
+'
+
+12
+1 objects returned for eager expression '
+count(collection("TPropose.dbxml")/fragment)
+'
+
+24
+4 objects returned for eager expression '
+collection("TPropose.dbxml")/fragment[@root="true"]
+'
+
+<fragment id="F_1" root="true">
+    <class id="C1">
+        <name>C2</name>
+    </class>
+    <mappings>FM_1</mappings>
+</fragment>
+<fragment id="F_2" root="true">
+    <class id="C12">
+        <name>C1</name>
+    </class>
+    <mappings>FM_4</mappings>
+</fragment>
+<fragment id="F_13" root="true">
+    <class id="C31">
+        <name>C2*</name>
+    </class>
+    <mappings>FM_15</mappings>
+</fragment>
+<fragment id="F_14" root="true">
+    <class id="C32">
+        <name>C1*</name>
+    </class>
+    <mappings>FM_16</mappings>
+</fragment>
+1 objects returned for eager expression '
+collection("TPropose.dbxml")/fragment[@id="F_2"]
+'
+
+<fragment id="F_2" root="true">
+    <class id="C12">
+        <name>C1</name>
+    </class>
+    <mappings>FM_4</mappings>
+</fragment>
+1 objects returned for eager expression '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+let $fragId := "F_2"
+let $fmIds := data(collection("TPropose.dbxml")/fragment[@id=$fragId]/mappings)
+for $fm in collection("TPropose.dbxml")/fragment-mapping
+let $fmId := $fm/@id
+where functx:is-value-in-sequence($fmId, $fmIds)
+return $fm
+'
+
+<fragment-mapping id="FM_4">
+    <operator id="OP_C2C_7" name="C2C" sim="-1.0">
+        <lhs-role name="lhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C3</element>
+        </lhs-role>
+        <rhs-role name="rhsFocusElement">
+            <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="class">C6</element>
+        </rhs-role>
+    </operator>
+</fragment-mapping>
+0 objects returned for eager expression '
+declare namespace functx = "http://www.functx.com"; 
+declare function functx:is-value-in-sequence 
+  ( $value as xs:anyAtomicType? ,
+    $seq as xs:anyAtomicType* )  as xs:boolean {
+       
+   $value = $seq
+ } ;
+let $fragId := "F_2"
+let $fmIds1 := data(collection("TPropose.dbxml")/fragment[@id=$fragId]/mappings)
+for $f in collection("TPropose.dbxml")/fragment
+let $fmIds2 := data($f/mappings)
+(:where $f/@id != $fragId and $fmIds2 = "FM_3":)
+where $f/@id != $fragId and $f/mappings[functx:is-value-in-sequence(@id, $fmIds1)]
+return $f
+'
+
+
+dbxml> 

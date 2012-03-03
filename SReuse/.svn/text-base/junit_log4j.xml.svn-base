@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- StdOut appender -->
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r [%t] %-5p %c %x - %m%n"/>
+		</layout>
+	</appender>
+	
+	<!-- Logs into std file -->
+	<appender name="R" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="SReuse_JUnit_Tests.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r [%t] %-5p %c %x - %m%n"/>
+		</layout>
+	</appender>
+
+	<logger name="org.exolab.castor">
+		<level value="WARN"/>
+	</logger>
+	
+	<logger name="com.big.tuwien.smartmatcher.strategy.sreuse.ProxyWrapper">
+		<level value="debug"/>
+	</logger>
+
+	<!-- Set the std level and the std appender -->
+	<root>
+		<level value ="info"/>
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="R"/>
+	</root>
+	
+	
+</log4j:configuration>

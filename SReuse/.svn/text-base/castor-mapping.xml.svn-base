@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                         "http://castor.org/mapping.dtd">
+
+<mapping>
+	<description>Castor XML Reuse mapping</description>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement" identity="id">
+		<map-to xml="element"/>
+		
+		<field name="id" type="string">
+   			<bind-xml name="id" node="attribute"/>
+   		</field>
+
+   		<field name="name" type="string">
+      		<bind-xml name="name" node="element"/>
+   		</field>
+   	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLClassElement" 
+				extends="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement">
+		<map-to xml="class"/>
+   		
+   		<field name="attributes" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLAttributeElement"
+   		collection="set">
+      		<bind-xml name="attribute" node="element"/>
+   		</field>
+   		
+   		<field name="references" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLReferenceElement"
+   		collection="set">
+      		<bind-xml name="reference" node="element"/>
+   		</field>
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLAttributeElement" 
+					extends="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement" >
+		<map-to xml="attribute"/>
+		
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLReferenceElement" 
+				extends="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement">
+		<map-to xml="reference"/>
+
+   		<field name="pointsTo" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLClassElement">
+   			<bind-xml name="target" node="attribute" reference="true"/>
+   		</field>
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragment" identity="id">
+		<map-to xml="fragment"/>
+		
+		<field name="id" type="string">
+   			<bind-xml name="id" node="attribute"/>
+   		</field>
+   		
+   		<field name="root" type="boolean">
+   			<bind-xml name="root" node="attribute"/>
+   		</field>
+   		
+		<field name="classes" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLClassElement" collection="set">
+   			<bind-xml name="class" node="element"/>
+   		</field>
+  		
+  		<field name="parents" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragment" collection="set">
+   			<bind-xml name="parent" node="attribute" reference="true"/>
+   		</field>
+   		
+   		<field name="children" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragment" collection="set">
+   			<bind-xml name="children" node="element" reference="true"/>
+   		</field>
+   		
+   		<field name="mappings" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragmentMapping" collection="set">
+   			<bind-xml name="mappings" node="element" reference="true"/>
+   		</field>				
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragments">
+		<map-to xml="fragments"/>
+		
+		<field name="fragments" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragment" collection="collection">
+   			<bind-xml name="fragment" node="element"/>
+   		</field>
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLFragmentMapping" identity="id">
+		<map-to xml="fragment-mapping"/>
+		
+		<field name="id" type="string">
+   			<bind-xml name="id" node="attribute"/>
+   		</field>
+		
+		<field name="flattenedOperators" set-method="addFlattenedOperator" get-method="getFlattenedOperators" 
+									type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLOperator" collection="set">
+   			<bind-xml name="operator" node="element"/>
+   		</field>
+	</class>
+
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLOperator" identity="id">
+		<map-to xml="operator"/>
+		
+		<field name="id" type="string">
+   			<bind-xml name="id" node="attribute"/>
+   		</field>
+		
+		<field name="name" type="string">
+   			<bind-xml name="name" node="attribute"/>
+   		</field>
+   		
+   		<field name="similarity" type="double">
+   			<bind-xml name="sim" node="attribute"/>
+   		</field>
+   		
+   		<field name="children" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLOperator" collection="set">
+   			<bind-xml name="children" node="element" reference="true"/>
+   		</field>
+   		
+   		<field name="parents" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLOperator" collection="set">
+   			<bind-xml name="parents" node="attribute" reference="true"/>
+   		</field>
+   		
+   		 <field name="lhsRoles" collection="map">
+              <bind-xml name="lhs-role">
+                  <class name="org.exolab.castor.mapping.MapItem">
+                      <field name="key" type="java.lang.String">
+                          <bind-xml name="name" node="attribute"/>
+                      </field>
+                      <field name="value" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement">
+                          <bind-xml name="element" reference="true"/>
+                      </field>	  
+                  </class>
+              </bind-xml>		  
+          </field> 
+          
+          <field name="rhsRoles" collection="map">
+              <bind-xml name="rhs-role">
+                  <class name="org.exolab.castor.mapping.MapItem">
+                      <field name="key" type="java.lang.String">
+                          <bind-xml name="name" node="attribute"/>
+                      </field>
+                      <field name="value" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLElement">
+                          <bind-xml name="element" reference="true"/>
+                      </field>	  
+                  </class>
+              </bind-xml>		  
+          </field>
+          
+	</class>
+	
+	<class name="com.big.tuwien.smartmatcher.strategy.sreuse.XMLMetaModel">
+		<map-to xml="metamodel"/>
+		
+		<field name="classes" type="com.big.tuwien.smartmatcher.strategy.sreuse.XMLClassElement" collection="set">
+   			<bind-xml name="class" node="element"/>
+   		</field>	
+	</class>
+
+</mapping>
