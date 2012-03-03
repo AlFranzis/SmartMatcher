@@ -1,0 +1,60 @@
+pluginName=Sm_mm_1 Plugin
+providerName=Sample Plugin Provider, Inc
+
+editorName=Sm_mm_1 Diagram Editing
+context.description=Sm_mm_1 Diagram Editing
+context.name=In Sm_mm_1 Diagram Editor
+newWizardName=Sm_mm_1 Diagram
+newWizardDesc=Creates Sm_mm_1 diagram.
+
+initDiagramActionLabel=Initialize sm_mm_diagram diagram file
+
+
+navigatorContentName=*.sm_mm_diagram diagram contents
+domainNavigatorContentName=*.sm_mm model contents
+update.diagram.name=Update Sm_mm_1 diagram
+update.diagram.description=Perform Sm_mm_1 diagram update
+
+
+# Property Sheet
+tab.appearance=Appearance
+tab.diagram=Rulers & Grid
+tab.domain=Core
+
+# Preferences
+prefpage.at.ac.tuwien.big.smartmatcher.ui.gmf.diagram.general=Sm_mm_1 Diagram
+prefpage.at.ac.tuwien.big.smartmatcher.ui.gmf.diagram.appearance=Appearance
+prefpage.at.ac.tuwien.big.smartmatcher.ui.gmf.diagram.connections=Connections
+prefpage.at.ac.tuwien.big.smartmatcher.ui.gmf.diagram.printing=Printing
+prefpage.at.ac.tuwien.big.smartmatcher.ui.gmf.diagram.rulersAndGrid=Rulers And Grid
+
+
+# Providers
+metatype.name.MappingModel_1000=Undefined
+metatype.name.Class_2001=Class
+metatype.name.A2A_2002=A2A
+metatype.name.C2C_2003=C2C
+metatype.name.R2R_2004=R2R
+metatype.name.A2C_2005=A2C
+metatype.name.Attribute_3001=Attribute
+metatype.name.C2CLhs_4001=Undefined
+metatype.name.C2CRhs_4002=Undefined
+metatype.name.A2ALhs_4003=Undefined
+metatype.name.A2ARhs_4004=Undefined
+metatype.name.C2CContextMappings_4005=Undefined
+metatype.name.Reference_4006=Reference
+metatype.name.R2RLhs_4007=Undefined
+metatype.name.R2RRhs_4008=Undefined
+metatype.name.ClassSupertypes_4009=Undefined
+metatype.name.A2CLhsAttribute_4010=Undefined
+metatype.name.A2CRhsAttribute_4011=Undefined
+metatype.name.A2CRhsClass_4012=Undefined
+metatype.name.A2CRhsReference_4013=Undefined
+
+# Commands and menu actions
+cmdcategory.name=Sm_mm_1 Editor Commands
+cmdcategory.desc=Sm_mm_1 Editor Commands
+
+metatype.name.OperatorContextMappings_4014=Undefined
+metatype.name.ContextOperatorContextMappings_4015=Undefined
+metatype.name.ContextOperatorContextMappings_4005=Undefined

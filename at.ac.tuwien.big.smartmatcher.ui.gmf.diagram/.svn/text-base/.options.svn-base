@@ -1,0 +1,7 @@
+# Tracing options for the at.ac.tuwien.big.smartmatcher.ui.gmf.diagram plug-in
+
+# Common issues
+at.ac.tuwien.big.smartmatcher.ui.gmf.diagram/debug=false
+
+# Visual IDs
+at.ac.tuwien.big.smartmatcher.ui.gmf.diagram/debug/visualID=false

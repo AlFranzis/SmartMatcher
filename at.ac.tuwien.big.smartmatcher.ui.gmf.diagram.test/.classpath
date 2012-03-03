@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/at.ac.tuwien.big.smartmatcher.ui.gmf.diagram"/>
+	<classpathentry kind="lib" path="lib/jmockit.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.draw2d_3.5.0.v20090528-1511.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.gef_3.5.0.v20090528-1511.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.gmf.runtime.common.core_1.2.0.v20090403-1720.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.gmf.runtime.diagram.core_1.2.0.v20090403-1720.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.gmf.runtime.diagram.ui_1.2.0.v20090526-1925.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.gmf.runtime.notation_1.2.0.v20090521-1925.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/at.ac.tuwien.big.smartmatcher.ui.gmf"/>
+	<classpathentry kind="var" path="JDK_HOME/lib/tools.jar"/>
+	<classpathentry kind="var" path="JDK_HOME"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
