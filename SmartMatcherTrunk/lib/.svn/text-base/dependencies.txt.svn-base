@@ -1,9 +1,0 @@
-ECLIPSE DEPENDENCIES:
-The following Eclipse-plugin-libraries are necessary to build and run
-the Smart Matcher:
-org.eclipse.emf
-org.eclipse.emf.ecore.common
-org.eclipse.emf.ecore.xmi
-
-OTHER DEPENDENCIES:
-All libraries in the lib directory.

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<uml2CD:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml2CD="http://uml2CD" name="Person">
-  <ownedElement xsi:type="uml2CD:Property" name="name"/>
-  <ownedElement xsi:type="uml2CD:Property" name="svnr"/>
-</uml2CD:Class>

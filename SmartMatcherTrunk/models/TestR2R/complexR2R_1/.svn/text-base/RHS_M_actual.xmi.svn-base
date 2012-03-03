@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<rhs:Y xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:rhs="http://rhs" name="kargl">
-  <refX name="horst">
-    <refV name="auto"/>
-  </refX>
-  <refW name="hund"/>
-</rhs:Y>

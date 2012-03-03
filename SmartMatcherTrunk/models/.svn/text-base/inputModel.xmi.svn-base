@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<test:A xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:test="http://test" xsi:schemaLocation="http://test D:/eclipse_3.4_workspace/CAR_Interpreter/model/inputMetamodel.ecore" a="a111">
-  <b b="sdfasdfasdf"/>
-</test:A>

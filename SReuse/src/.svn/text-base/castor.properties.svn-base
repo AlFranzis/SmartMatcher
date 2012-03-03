@@ -1,6 +1,0 @@
-org.exolab.castor.indent=true
-
-# necessary, otherwise castor has problems with id references (IDREFS)
-# see: http://jira.codehaus.org/browse/CASTOR-2035
-org.exolab.castor.xml.lenient.id.validation=true
-

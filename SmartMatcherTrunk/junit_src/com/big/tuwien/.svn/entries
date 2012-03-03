@@ -1,34 +1,0 @@
-10
-
-dir
-644
-svn://192.168.1.26/srv/svn_repos/smart_matcher/SmartMatcherFSM/trunk/junit_src/com/big/tuwien
-svn://192.168.1.26/srv/svn_repos/smart_matcher
-
-
-
-2010-04-20T18:11:37.578723Z
-527
-alex
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-65d119f8-2716-40bc-93f9-93afd9fd2cf3
-
-ModelManager
-dir
-
-SmartMatcher
-dir
-

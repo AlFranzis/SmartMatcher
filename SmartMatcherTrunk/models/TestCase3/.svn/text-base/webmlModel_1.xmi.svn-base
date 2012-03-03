@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<webml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:webml="http://webml" xsi:schemaLocation="http://webml C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/model/TestCase3/webml.ecore">
-  <entities name="Manu2">
-    <attribute name="manuAtt2"/>
-  </entities>
-</webml:Model>

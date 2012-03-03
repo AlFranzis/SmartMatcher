@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<UML14:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UML14="http://uml14" xsi:schemaLocation="http://uml14 C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/model/UMLlight+++/UML_1.4.2_CD.ecore" name="Person">
-  <feature name="svnr"/>
-  <feature name="name"/>
-</UML14:Class>

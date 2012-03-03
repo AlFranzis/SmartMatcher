@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<uml2CD:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml2CD="http://uml2CD" xsi:schemaLocation="http://uml2CD C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/model/TestCase_UML14_2_UML20/UML_2.0_CD.ecore" name="Person">
-  <ownedElement xsi:type="uml2CD:Property" name="name"/>
-  <ownedAttribute name="svnr"/>
-</uml2CD:Class>

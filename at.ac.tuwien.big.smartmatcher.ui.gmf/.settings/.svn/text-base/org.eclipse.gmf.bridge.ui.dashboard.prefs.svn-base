@@ -1,8 +1,0 @@
-#Thu Sep 03 19:45:26 CEST 2009
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.genmodel
-gmf_dashboard/domainModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.ecore
-gmf_dashboard/generationModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/at.ac.tuwien.big.smartmatcher.ui.gmf/model/sm_mm_1.gmftool

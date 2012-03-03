@@ -1,8 +1,0 @@
-openContainer TFragmentMappingDAO.dbxml
-
-query '
-collection("TFragmentMappingDAO.dbxml")
-'
-
-print
-
