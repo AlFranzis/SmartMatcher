@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<mappingModel>
+	<LHSMetamodel>C:\model\hExample_3\hExample_3_LHS.ecore</LHSMetamodel>
+	<RHSMetamodel>C:\model\hExample_3\hExample_3_RHS.ecore</RHSMetamodel>
+	<mapping>
+		<LHSElement>
+			<Element>A</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>X</Element>
+		</RHSElement>
+	</mapping>
+	<mapping>
+		<LHSElement>
+			<Element>A.name</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>X.att1</Element>
+		</RHSElement>
+	</mapping>
+</mappingModel>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<lhs:A xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lhs="http://lhs" xsi:schemaLocation="http://lhs LHS_MM.ecore" a="bbb">
+  <b b="1"/>
+  <b b="2"/>
+</lhs:A>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UML2:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UML2="http://uml2" xsi:schemaLocation="http://uml2 C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/TestModels/er2uml/UML_2.0_CD.ecore">
+  <classes name="Person" isAbstract="TRUE" isActive="TRUE">
+    <ownedAttribute name="svnr" type="String"/>
+  </classes>
+  <classes name="Student" isAbstract="FALSE" isActive="TRUE">
+    <ownedAttribute name="matrikelnr" type="String"/>
+  </classes>
+</UML2:Model>

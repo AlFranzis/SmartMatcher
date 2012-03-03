@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<mappingModel>
+	<LHSMetamodel>C:\model\hExample_1\hExample_1_LHS.ecore</LHSMetamodel>
+	<RHSMetamodel>C:\model\hExample_1\hExample_1_RHS.ecore</RHSMetamodel>
+	<mapping>
+		<LHSElement>
+			<Element>A</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>X</Element>
+		</RHSElement>
+	</mapping>
+	<mapping>
+		<LHSElement>
+			<Element>B</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>Y</Element>
+		</RHSElement>
+	</mapping>
+	<mapping>
+		<LHSElement>
+			<Element>A_ref_B</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>X_link_Y</Element>
+		</RHSElement>
+	</mapping>
+	<mapping>
+		<LHSElement>
+			<Element>B.name</Element>
+		</LHSElement>
+		<RHSElement>
+			<Element>Y.label</Element>
+		</RHSElement>
+	</mapping>
+</mappingModel>

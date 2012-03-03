@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webml="http://webml">
+  <webml:Entity name="Manu">
+    <attribute name="manuAtt"/>
+  </webml:Entity>
+  <webml:Entity name="Horst">
+    <attribute name="horstAtt"/>
+  </webml:Entity>
+  <webml:Model/>
+</xmi:XMI>

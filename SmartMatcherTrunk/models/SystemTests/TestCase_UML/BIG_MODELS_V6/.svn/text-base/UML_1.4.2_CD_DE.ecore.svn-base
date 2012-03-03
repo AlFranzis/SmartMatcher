@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="UML_14"
+    nsURI="http://UMLDE" nsPrefix="UML">
+  <eClassifiers xsi:type="ecore:EClass" name="MethodenWert" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aufzaehlungsTyp" eType="#//Aufzaehlung"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="art" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="standartWert" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="einfacherWert" eType="#//Einfach"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Einschraenkung">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="beschreibung" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InstanzAnzahl">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="untergrenze" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="obergrenze" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Verhalten" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inhlat" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sichtbarkeit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="verhaltensWerte" eType="#//MethodenWert"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Eigenschaft" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="initialWert" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anzahlInstanzen" eType="#//InstanzAnzahl"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sichtbarkeit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aufzaehlungsTyp" eType="#//Aufzaehlung"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="einfacherTyp" eType="#//Einfach"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vererbung">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kind" upperBound="-1" eType="#//Konzept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eltern" upperBound="-1"
+        eType="#//Konzept"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unterscheidung" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Verbindung" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="verbinder" lowerBound="2"
+        upperBound="-1" eType="#//Verbindungsende" containment="true" eOpposite="#//Verbindungsende/link"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Verbindungsende" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="link" lowerBound="1" eType="#//Verbindung"
+        eOpposite="#//Verbindung/verbinder"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="teilnehmer" eType="#//Konzept"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="istNavigierbar" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anzahlInstanzen" eType="#//InstanzAnzahl"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sichtbarkeit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="auszeichner" eType="#//Eigenschaft"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Konzept" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="istAktiev" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eigenschaften" upperBound="-1"
+        eType="#//Eigenschaft" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="verhalten" upperBound="-1"
+        eType="#//Verhalten" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Einfach" eSuperTypes="#//Benanntes"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Aufzaehlung" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zeichen" lowerBound="1"
+        upperBound="-1" eType="#//Aufzaehlungswert" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aufzaehlungswert">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kommentar">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inhalt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geschachtelt" upperBound="-1"
+        eType="#//Schachtel" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schachtel" eSuperTypes="#//Benanntes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seineKlassen" upperBound="-1"
+        eType="#//Konzept" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seinePakete" upperBound="-1"
+        eType="#//Schachtel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seineAufzaehlungen" upperBound="-1"
+        eType="#//Aufzaehlung" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seineVererbungen" upperBound="-1"
+        eType="#//Vererbung" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seineVerbindungen" upperBound="-1"
+        eType="#//Verbindung" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seineEinfachenTypen" upperBound="-1"
+        eType="#//Einfach" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Benanntes" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="beschreibung" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommentare" upperBound="-1"
+        eType="#//Kommentar" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="einschraenkungen" upperBound="-1"
+        eType="#//Einschraenkung" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

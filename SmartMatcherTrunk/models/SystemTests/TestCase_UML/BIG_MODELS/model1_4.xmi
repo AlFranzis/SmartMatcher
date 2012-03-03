@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UML:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UML="http://UML" xsi:schemaLocation="http://UML C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM_Release0300/models/SystemTests/TestCase_UML/BIG_MODELS/UML_1.4.2_CD.ecore">
+  <package name="Tankstelle">
+    <comments body="Dieses Modell modelliert eine Tankstelle"/>
+    <classes name="Zapfsaeule" isActive="true">
+      <attributes name="nummer" initialValue="" visibility="public" type="//@package.0/@dataTypes.0">
+        <multiplicity>
+          <range lower="1" upper="1"/>
+        </multiplicity>
+      </attributes>
+      <attributes name="treibstoff" initialValue="normal" visibility="public" type="//@package.0/@dataTypes.2">
+        <multiplicity>
+          <range lower="1" upper="1"/>
+        </multiplicity>
+      </attributes>
+      <methods name="betanken" visibility="public"/>
+    </classes>
+    <classes name="Auto" isActive="true">
+      <attributes name="fuellstand" initialValue="20" visibility="private" type="//@package.0/@dataTypes.0">
+        <multiplicity>
+          <range lower="1" upper="1"/>
+        </multiplicity>
+      </attributes>
+      <methods name="startTanken" visibility="public"/>
+    </classes>
+    <classes name="Fahrzeug" isActive="true">
+      <attributes name="kennzeichen" initialValue="0" visibility="public" type="//@package.0/@dataTypes.1">
+        <multiplicity>
+          <range upper="1"/>
+        </multiplicity>
+      </attributes>
+    </classes>
+    <dataTypes xsi:type="UML:Primitive" name="Integer"/>
+    <dataTypes xsi:type="UML:Primitive" name="String"/>
+    <dataTypes xsi:type="UML:Enumeration" name="Treibstoffart">
+      <literal value="normal"/>
+      <literal value="super"/>
+      <literal value="diesel"/>
+    </dataTypes>
+    <generalizations child="//@package.0/@classes.1" parent="//@package.0/@classes.2" discriminator=""/>
+    <associations name="zapfsaeule2auto">
+      <connection name="zapfsaeule" participant="//@package.0/@classes.0" isNavigable="true" visibility="public"/>
+      <connection name="auto" participant="//@package.0/@classes.1" isNavigable="true" visibility="public"/>
+    </associations>
+  </package>
+</UML:Model>

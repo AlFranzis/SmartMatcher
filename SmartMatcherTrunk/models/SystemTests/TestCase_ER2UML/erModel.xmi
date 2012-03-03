@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<er:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:er="http://er" xsi:schemaLocation="http://er C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/TestModels/er2uml/er_ODM.ecore">
+  <entities name="Person">
+    <entityAttribute name="svnr"/>
+  </entities>
+  <entities isA="//@entities.0" name="Student">
+    <entityAttribute name="matrikelnr"/>
+  </entities>
+</er:Model>

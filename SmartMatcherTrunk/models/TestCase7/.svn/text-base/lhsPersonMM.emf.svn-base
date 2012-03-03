@@ -1,0 +1,23 @@
+@namespace(
+	uri="http://smartmatcher/familyextended1",
+	prefix="p")
+package data;
+
+class Model {
+	val Person[*] persons;
+	val Address[*] addresses;    
+}
+
+class Person {
+   attr String firstName;
+   attr String lastName;
+   attr Integer address;
+}
+
+class Address {
+  attr Integer nr;
+  attr String street;
+  attr String zipCode;
+  attr String city;
+  attr String country;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rhs:X xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rhs="http://rhs" xsi:schemaLocation="http://rhs C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/models/TestPostprocessing2/RHS_MM.ecore" x="aaa">
+  <y y="1"/>
+  <y y="2"/>
+  <z z="111">
+    <y y="b1"/>
+  </z>
+</rhs:X>

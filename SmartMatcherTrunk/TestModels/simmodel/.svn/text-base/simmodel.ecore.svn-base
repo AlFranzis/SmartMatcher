@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="simmodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Class">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAbstract"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subclasses" eType="#//SubClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SubClass" eSuperTypes="#//Class">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_a"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_b"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_c"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsubclasses" eType="#//SubSubClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SubSubClass" eSuperTypes="#//SubClass">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finals" eType="#//FinalClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FinalClass"/>
+</ecore:EPackage>

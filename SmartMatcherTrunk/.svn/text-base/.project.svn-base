@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>SmartMatcherTrunk</name>
+	<comment></comment>
+	<projects>
+		<project>at.ac.tuwien.big.smartmatcher.ui.gmf</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.evelopers.unimod.generator.symbian.symbianbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.evelopers.unimod.generator.xml.xmlbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.evelopers.unimod.generator.java.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.evelopers.unimod.unimodnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

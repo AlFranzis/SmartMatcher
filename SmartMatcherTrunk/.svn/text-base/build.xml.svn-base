@@ -1,0 +1,77 @@
+<project>
+	<property name="src" location="src"/>
+	<property name="build" location="bin"/>
+	<property name="dist"  location="dist"/>
+	<property name="libs"  location="lib"/>
+	<property name="eclipse_dir" location="C:/Program Files/eclipse_emf"/>
+	<property name="eclipse_plugin_dir" location="${eclipse_dir}/plugins"/>
+	<property name="unimod_core_dir" location="${eclipse_plugin_dir}/com.evelopers.unimod.core_1.3.39"/>
+	<property name="unimod_standalone_dir" location="${eclipse_plugin_dir}/com.evelopers.unimod.adapter.standalone_1.3.39"/>
+	<property name="unimod_state_machine2" location="${basedir}/Tiefensuche_SmartMatcher.unimod"/>
+	
+	<property name="unimod_state_machine" value="tiefensuche_SmartMatcher1225816614315.xml"/>
+		
+	<path id="std_classpath">
+		<!-- Needed Eclipse plugins	-->
+	     <fileset dir="${eclipse_plugin_dir}">
+	        <include name="**/org.eclipse.emf*.jar"/>
+	     	<include name="**/org.eclipse.swt*.jar"/>
+	     	<include name="**/org.eclipse.jface*.jar"/>
+	     	<include name="**/org.eclipse.core*.jar"/>
+	     	<include name="**/org.eclipse.equinox*.jar"/>
+	     	<include name="**/org.eclipse.ui.workbench*.jar"/>
+	     	<include name="**/org.eclipse.osgi*.jar"/>
+	     </fileset>
+		
+		<!-- Unimod State Machine Core libraries -->
+		<fileset dir="${unimod_core_dir}/lib">
+			<include name="**/*.jar"/>
+		</fileset>
+		
+		<fileset dir="${unimod_core_dir}">
+					<include name="**/*.jar"/>
+		</fileset>
+		
+		<fileset dir="${unimod_standalone_dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+		
+		<!-- Project libraries -->
+		<fileset dir="${libs}">
+			<include name="**/*.jar"/>
+		</fileset>
+		
+		<!-- Build path -->
+		<pathelement path="${build}"/>
+	</path>
+
+	
+	<target name="printClasspath">
+		<!-- get the classpath in a printable form -->
+		<pathconvert pathsep="${line.separator}|   |-- "
+		    	property="myclasspath"
+		    	refid="std_classpath">
+		</pathconvert>
+		    	
+		<!-- Capture the path as a delimited property using the refid attribute -->
+		<!--<property name="myclasspath" refid="std_classpath"/>-->
+		<!-- Emit the property to the ant console -->
+		<!--<echo message="Classpath = ${myclasspath}"/>-->
+
+		<echo message="|-- Classpath"/>
+		<echo message="|   |"/>
+		<echo message="|   |-- ${myclasspath}"/>
+	</target>
+	
+	
+	
+    <target name="run">
+        <java classpathref="std_classpath" 
+        	fork="true"
+        	classname="com.evelopers.unimod.adapter.standalone.Run">
+        	 <arg value="${unimod_state_machine}"/>
+
+        </java>
+    </target>
+
+</project>

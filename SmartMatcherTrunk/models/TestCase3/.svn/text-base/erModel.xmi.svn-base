@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<er:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:er="http://er" xsi:schemaLocation="http://er C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/model/TestCase3/er_ODM.ecore">
+  <entities name="Manu2">
+    <entityAttribute name="manuAtt2"/>
+  </entities>
+  
+  <entities name="Horst">
+    <entityAttribute name="horstAtt"/>
+  </entities>
+</er:Model>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rhs:Y xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rhs="http://rhs" xsi:schemaLocation="http://rhs RHS.ecore" name="kargl">
+  <refX name="horst"/>
+</rhs:Y>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml2CD:UMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml2CD="http://uml2CD">
+  <packages name="Tankstelle">
+    <comments value="Dieses Modell modelliert eine Tankstelle"/>
+    <constraints specification="x&lt;2"/>
+    <nestedPackage name="InnerPackage"/>
+    <packagedClass name="Zapfsaeule" active="true">
+      <ownedOperation name="betanken" body="&quot;betanken_empty&quot;"/>
+    </packagedClass>
+    <packagedClass name="Auto">
+      <ownedOperation name="startTanken" body="&quot;startTanken_empty&quot;">
+        <parameters name="param1" kind="in" defaultValue="0" primitiveType="//@packages.0/@packagedPrimitive.0"/>
+      </ownedOperation>
+    </packagedClass>
+    <packagedClass name="Fahrzeug"/>
+    <packagedClass name="Treibstoff"/>
+    <packagedClass name="Diesel"/>
+    <packagedEnum name="Treibstoffart">
+      <ownedLiteral name="normal"/>
+      <ownedLiteral name="super"/>
+      <ownedLiteral name="diesel"/>
+      <ownedLiteral name="heizoel"/>
+    </packagedEnum>
+    <packagedAssoc name="zapfsaeule2auto"/>
+    <packagedGeneralizations general="//@packages.0/@packagedClass.1" specific="//@packages.0/@packagedClass.2"/>
+    <packagedGeneralizations general="//@packages.0/@packagedClass.4" specific="//@packages.0/@packagedClass.3"/>
+    <packagedPrimitive name="Integer"/>
+    <packagedPrimitive name="String"/>
+    <packagedPrimitive name="Float"/>
+    <packagedPrimitive name="Double"/>
+    <packagedPrimitive name="X3"/>
+  </packages>
+</uml2CD:UMLModel>

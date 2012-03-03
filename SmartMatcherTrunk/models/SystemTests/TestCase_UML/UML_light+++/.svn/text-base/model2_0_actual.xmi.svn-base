@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2="http://uml2">
+  <UML2:Class name="Person">
+    <ownedAttribute href="models/SystemTests/TestCase_UML/UML_light+++/model2_0_actual.xmi#/1"/>
+    <ownedAttribute href="models/SystemTests/TestCase_UML/UML_light+++/model2_0_actual.xmi#/2"/>
+  </UML2:Class>
+  <UML2:Property name="svnr">
+    <class href="models/SystemTests/TestCase_UML/UML_light+++/model2_0_actual.xmi#/0"/>
+  </UML2:Property>
+  <UML2:Property name="name">
+    <class href="models/SystemTests/TestCase_UML/UML_light+++/model2_0_actual.xmi#/0"/>
+  </UML2:Property>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<er:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:er="http://er" xsi:schemaLocation="http://er er_ODM.ecore">
+  <entities name="Book">
+    <entityAttribute name="price"/>
+    <entityAttribute name="id"/>
+    <primaryKey attribute="//@entities.0/@entityAttribute.1"/>
+  </entities>
+  <entities name="Chapter">
+    <entityAttribute name="number"/>
+    <entityAttribute name="book_id"/>
+    <entityAttribute name="id"/>
+    <primaryKey attribute="//@entities.1/@entityAttribute.2"/>
+  </entities>
+  <entities name="Page"/>
+  <relationships name="contains">
+    <role entity="//@entities.0" minCardinality="1" maxCardinality="1"/>
+    <role entity="//@entities.1" minCardinality="-1"/>
+  </relationships>
+  <relationships name="consists">
+    <role entity="//@entities.1" minCardinality="1" maxCardinality="1"/>
+    <role entity="//@entities.2" minCardinality="1" maxCardinality="-1"/>
+  </relationships>
+</er:Model>

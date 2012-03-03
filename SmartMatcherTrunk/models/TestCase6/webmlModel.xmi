@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<webml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:webml="http://webml" xsi:schemaLocation="http://webml webml.ecore">
+  <entities name="Chapter">
+    <attribute name="number" type="Integer"/>
+    <attribute name="book_id"/>
+    <attribute name="id"/>
+    <relationship name="consists" maxCard="-1" minCard="1" roleName="chapter" to="//@entities.2"/>
+  </entities>
+  <entities name="Book">
+    <attribute name="id"/>
+    <attribute name="price" type="Number"/>
+    <relationship name="contains" roleName="book" to="//@entities.0"/>
+  </entities>
+  <entities name="Page"/>
+</webml:Model>

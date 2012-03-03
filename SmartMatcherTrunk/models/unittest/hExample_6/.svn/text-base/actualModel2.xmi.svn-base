@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<he_6_RHS:model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:he_6_RHS="http://hExample_6_RHS">
+  <containsX name="maxi" refY="//@containsY.0">
+    <contZ name="c1"/>
+    <contZ name="c2"/>
+    <contZ name="c3"/>
+  </containsX>
+  <containsX name="Bernhard" refY="//@containsY.1"/>
+  <containsY name="susi"/>
+  <containsY name="andrea"/>
+  <containsZ name="c"/>
+</he_6_RHS:model>

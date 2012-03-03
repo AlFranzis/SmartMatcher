@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UML:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UML="http://UML" xsi:schemaLocation="http://UML C:/Dokumente und Einstellungen/MWimmer/Desktop/workspace2/SmartMatcherFSM/model/TestCase_UML14_2_UML20/UML_1.4.2_CD.ecore" name="Person">
+  <feature xsi:type="UML:Attribute" name="svnr"/>
+  <feature xsi:type="UML:Attribute" name="name"/>
+</UML:Class>

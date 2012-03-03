@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hExample_6_RHS"
+    nsURI="http://hExample_6_RHS" nsPrefix="he_6_RHS">
+  <eClassifiers xsi:type="ecore:EClass" name="model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsX" upperBound="-1"
+        eType="#//X" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsY" upperBound="-1"
+        eType="#//Y" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsZ" upperBound="-1"
+        eType="#//Z" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="X">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refY" eType="#//Y"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contZ" upperBound="-1"
+        eType="#//Z" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Y">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Z">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- StdOut appender -->
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %C{1} [%M] - %m%n"/>
+		</layout>
+	</appender>
+	
+	<!-- Logs into std file -->
+	<appender name="R" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="smartmatcher.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r [%t] %-5p %c %x - %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- Sets the level of an individual logger -->
+	<logger name="com.big.tuwien.SmartMatcher.strategy">
+		<level value="debug"/>
+	</logger>
+	<logger name="com.big.tuwien.ModelManager.MappingMatrixCreation.NewModelParser">
+		<level value="warn"/>
+	</logger>
+	<logger name="com.big.tuwien.ModelManager.MappingMatrixCreation.ModelLinker">
+		<level value="warn"/>
+	</logger>
+	<logger name="com.big.tuwien.SmartMatcher.strategy.DepthSearchStrategy2">
+		<level value="debug"/>
+	</logger>
+	<logger name="com.big.tuwien.SmartMatcher.model.NewModelCompareImpl">
+		<level value="error"/>
+	</logger>
+	<logger name="com.big.tuwien.SmartMatcher.operators.heterogenic">
+		<level value="warn"/>
+	</logger>
+	<logger name="com.big.tuwien.SmartMatcher.operators.homogenic">
+		<level value="warn"/>
+	</logger>
+	<logger name="com.big.tuwien.SmartMatcher.views.iterator">
+		<level value="warn"/>
+	</logger>
+	
+
+	<!-- Set the std level and the std appender -->
+	<root>
+		<level value ="warn"/>
+		<appender-ref ref="STDOUT"/>
+	</root>
+</log4j:configuration>

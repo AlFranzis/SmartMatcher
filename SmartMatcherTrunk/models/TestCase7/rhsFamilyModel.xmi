@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<r:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="http://smartmatcher/familyextended2" xsi:schemaLocation="http://smartmatcher/familyextended2 rhsFamilyMM.ecore">
+  <persons firstName="Alex">
+    <family lastName="Hoermandinger"/>
+    <addresses street="Herklotzgasse 18 / 13" zipCode="1150" city="Vienna" country="Austria"/>
+  </persons>
+</r:Model>
