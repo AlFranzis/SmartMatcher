@@ -66,9 +66,9 @@ public class MyResolver extends XmlResolver {
 		} catch (Exception e) {
 			// not an URI -> use default path
 			/* desktop path */
-			String path = "/home/alex/ecworkspace/SReuse/" + moduleLocation;
+			String path = "/home/alex/dev/git-repos/SmartMatcher/SReuse/" + moduleLocation;
 			/* notebook path */
-			path = "/home/alex/dev/ecworkspace_modelling/SReuse/" + moduleLocation;
+//			path = "/home/alex/dev/ecworkspace_modelling/SReuse/" + moduleLocation;
 	    	return mgr.createLocalFileInputStream(path);
 		}
     }
