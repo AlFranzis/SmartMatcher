@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Custom
+Bundle-SymbolicName: at.ac.tuwien.big.smartmatcher.ui.gmf.custom
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: at.ac.tuwien.big.smartmatcher.ui.gmf.custom.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

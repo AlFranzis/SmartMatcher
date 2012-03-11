@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: at.ac.tuwien.big.smartmatcher.ui.gmf.tests;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: sm_mm.tests
+Require-Bundle: org.eclipse.core.runtime,
+ at.ac.tuwien.big.smartmatcher.ui.gmf;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.junit;visibility:=reexport,
+ org.junit4
+Bundle-ActivationPolicy: lazy
